@@ -18,6 +18,12 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-http</artifactId>
             <version>4.1.74.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-tcnative-classes</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
