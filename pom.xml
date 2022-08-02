@@ -30,7 +30,7 @@
         <dependency>
             <groupId>io.github.stuartwdouglas.hacbs-test.shaded</groupId>
             <artifactId>shaded-jdk11</artifactId>
-            <version>1.8</version>
+            <version>1.9</version>
         </dependency>
     </dependencies>
 
