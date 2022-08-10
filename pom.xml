@@ -32,6 +32,12 @@
             <artifactId>shaded-jdk11</artifactId>
             <version>1.9</version>
         </dependency>
+        <!-- TODO: replace this with example projects-->
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>9.3</version>
+        </dependency>
     </dependencies>
 
 
