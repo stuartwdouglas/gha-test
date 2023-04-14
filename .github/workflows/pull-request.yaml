@@ -62,4 +62,9 @@ jobs:
                             </mirrors>
                         </settings>
                     EOF
-                    mvn clean install -s settings.xml
+                    mvn clean install -B -s settings.xml -Dmaven.repo.local=repo
+                    docker run -v `pwd`/repo:/repo -v `pwd`/target:/target quay.io/mk-ci-cd/apheleia-processor:df89a66314724604bd5be2112faea71d8bbbf0b6 /opt/jboss/container/java/run/run-java.sh analyse --maven-repo=/repo /target/hacbs-test.jar --sbom-path /target/sbom.json || true
+            -   uses: actions/upload-artifact@v3
+                with:
+                    name: sbom.json
+                    path: target/sbom.json
