@@ -52,14 +52,6 @@ jobs:
                                 </profile>
                             </profiles>
 
-                            <mirrors>
-                                <mirror>
-                                    <id>demo-demo_repo</id>
-                                    <name>demo-demo_repo</name>
-                                    <url>https://demo-154987583424.d.codeartifact.us-east-1.amazonaws.com/maven/demo_repo/</url>
-                                    <mirrorOf>*</mirrorOf>
-                                </mirror>
-                            </mirrors>
                         </settings>
                     EOF
                     mvn clean install -B -s settings.xml -Dmaven.repo.local=repo
