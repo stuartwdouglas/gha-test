@@ -16,6 +16,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jandex</artifactId>
+            <version>2.1.0.Final</version>
+        </dependency>
+        <dependency>
             <groupId>io.github.stuartwdouglas.hacbs-test.simple</groupId>
             <artifactId>simple-jdk17</artifactId>
             <version>0.1.2</version>
